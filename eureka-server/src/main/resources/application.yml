@@ -1,0 +1,9 @@
+server:
+  port: 92 #服务端口
+spring:
+  application:
+    name: eurekaserver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:92/eureka
