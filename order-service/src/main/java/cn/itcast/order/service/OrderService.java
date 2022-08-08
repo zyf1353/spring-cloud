@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import javax.annotation.Resource;
+
 @Service
 public class OrderService {
 
@@ -15,7 +17,7 @@ public class OrderService {
     private OrderMapper orderMapper;
 //    @Autowired
 //    private RestTemplate restTemplate;
-    @Autowired
+    @Resource
     private UserClient userClient;
 
     public Order queryOrderById(Long orderId) {
