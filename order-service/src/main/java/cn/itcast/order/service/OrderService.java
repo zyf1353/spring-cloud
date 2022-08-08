@@ -13,8 +13,8 @@ public class OrderService {
 
     @Autowired
     private OrderMapper orderMapper;
-    @Autowired
-    private RestTemplate restTemplate;
+//    @Autowired
+//    private RestTemplate restTemplate;
     @Autowired
     private UserClient userClient;
 
