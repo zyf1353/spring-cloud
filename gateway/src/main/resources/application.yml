@@ -12,8 +12,12 @@ spring:
           uri: lb://userservice
           predicates:
             - Path=/user/**
+#          filters:
+#            - AddRequestHeader=Truth,zyf
         - id: order-service
           uri: lb://orderservice
           predicates:
             - Path=/order/**
-            - After=2031-01-20T17:42:47.789-07:00[America/Denver]
+            - Before=2031-01-20T17:42:47.789-07:00[America/Denver]
+      default-filters:
+        - AddRequestHeader=Truth,zyf
