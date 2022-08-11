@@ -1,5 +1,5 @@
 server:
-  port: 94
+  port: 10010
 spring:
   application:
     name: gateway
